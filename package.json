@@ -1,6 +1,6 @@
 {
   "name": "printdesk",
-  "version": "1.62.7",
+  "version": "1.62.8",
   "productName": "Printdesk",
   "description": "Hardware bridge for Servicepos",
   "main": "main.js",
@@ -14,7 +14,7 @@
     "publish-win": "cross-env ELECTRON_IS_DEV=0 electron-builder --win -p always",
     "publish-mac": "cross-env ELECTRON_IS_DEV=0 electron-builder --macos -p always"
   },
-  "repository": "https://github.com/servicepos/printdesk",
+  "repository": "https://github.com/esbendamkjaer/printdesk",
   "build": {
     "appId": "com.servicepos.printdesk",
     "asarUnpack": [
