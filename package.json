@@ -17,6 +17,9 @@
   "repository": "https://github.com/esbendamkjaer/printdesk",
   "build": {
     "appId": "com.servicepos.printdesk",
+    "dmg": {
+      "writeUpdateInfo": false
+    },
     "asarUnpack": [
       "assets/BamdeskMint.exe"
     ],
