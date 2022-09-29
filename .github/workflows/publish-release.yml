@@ -39,6 +39,13 @@ jobs:
       - name: publish
         run: npm run publish-mac
 
+      - name: Delete blockmap asset
+        uses: mknejp/delete-release-assets@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: 'v*'
+          assets: '*.zip.blockmap'
+
   release-win:
     runs-on: ubuntu-18.04
 
