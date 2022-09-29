@@ -43,8 +43,8 @@ jobs:
         uses: mknejp/delete-release-assets@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: 'v*'
-          assets: '*.zip.blockmap'
+          tag: ${{ GITHUB_REF }}
+          assets: '*.zip.block'
 
   release-win:
     runs-on: ubuntu-18.04
