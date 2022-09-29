@@ -17,6 +17,7 @@
   "repository": "https://github.com/esbendamkjaer/printdesk",
   "build": {
     "appId": "com.servicepos.printdesk",
+    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
     "dmg": {
       "writeUpdateInfo": false
     },
