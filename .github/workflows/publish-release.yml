@@ -39,11 +39,14 @@ jobs:
       - name: publish
         run: npm run publish-mac
 
+      - name: Get release tag
+        run: echo "GIT_TAG=`echo $(git describe --tags --abbrev=0)`" >> $GITHUB_ENV
+
       - name: Delete blockmap asset
         uses: mknejp/delete-release-assets@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.ref }}
+          tag: ${{ env.GIT_TAG }}
           assets: '*.zip.block'
 
   release-win:
