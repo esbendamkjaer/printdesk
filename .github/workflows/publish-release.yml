@@ -47,7 +47,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ env.GIT_TAG }}
-          assets: '*.zip.block'
+          assets: '*.zip.blockmap'
 
   release-win:
     runs-on: ubuntu-18.04
